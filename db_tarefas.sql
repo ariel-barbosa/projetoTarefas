@@ -19,3 +19,7 @@ create table tbl_tarefas (
 ALTER TABLE tbl_tarefas
 ADD constraint fk_id_usuarios
 foreign key (id) references tbl_usuarios(id);
+
+SELECT * FROM db_tarefas.tbl_tarefas;
+
+SELECT * FROM db_tarefas.tbl_usuarios;
