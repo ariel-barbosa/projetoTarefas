@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import pymysql
+pymysql.install_as_MySQLdb()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tarefas.apps.TarefasConfig'
+    'tarefas.apps.TarefasConfig',
+    'sslserver'
 ]
 
 MIDDLEWARE = [
@@ -77,7 +81,7 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': str(BASE_DIR / 'db.tarefas'),
+        'NAME': 'db.tarefas',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': '127.0.0.1',
