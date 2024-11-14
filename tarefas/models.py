@@ -10,7 +10,7 @@ class Usuario(models.Model):
 class Tarefas(models.Model):
     descricao = models.CharField(255),
     setor = models.CharField(255),
-    proridade   = models.CharField(255),
+    prioridade   = models.CharField(255),
     status = models.CharField(255),
     data = models.DateField
     class Meta:

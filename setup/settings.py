@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tarefas.apps.TarefasConfig',
-    'sslserver'
 ]
 
 MIDDLEWARE = [
@@ -81,9 +80,9 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db.tarefas',
+        'NAME': 'db_tarefas',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': '1245',
         'HOST': '127.0.0.1',
         'PORT': '3306'
     }
