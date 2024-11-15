@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'db_tarefas',
         'USER': 'root',
-        'PASSWORD': '1245',
+        'PASSWORD': 'doce3400@',
         'HOST': '127.0.0.1',
         'PORT': '3306'
     }
