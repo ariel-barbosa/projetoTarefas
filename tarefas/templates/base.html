@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Tarefas</title>
+    <style>
+        /* Estilos para o topo da página */
+        .topo {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .topo h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para o título centralizado */
+        .titulo-centralizado {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 130px); /* Altura total da tela menos o topo e rodapé */
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        /* Estilos para o rodapé */
+        .rodape {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Topo da página -->
+    <div class="topo">
+        <h1>Gerenciamento de Tarefas</h1>
+        <div class="menu">
+            <a href="#cadastro-usuarios">Cadastro de Usuários</a>
+            <a href="#cadastro-tarefas">Cadastro de Tarefas</a>
+            <a href="#gerenciar-tarefas">Gerenciar Tarefas</a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="rodape">
+        © 2024 Gerenciamento de Tarefas. Todos os direitos reservados.
+    </div>
+
+</body>
+</html>
